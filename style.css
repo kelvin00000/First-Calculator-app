@@ -1,0 +1,234 @@
+:root{
+    --body: #2c3e50;
+    --background-color-1: #34495e;
+    --background-color-2: #212f3c;
+    --background-color-3: white;
+    --text-color-1: #212f3d;
+    --text-color-2: white;
+    --text-color-3: #1c2833;
+    --button-color-1: #1e8449;
+    --button-color-2: #f9e79f;
+    --button-color-3: #d5d8dc;
+    --button-color-4: #d4ac0d;
+}
+
+body{
+    background-color: var(--body);
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+        .header{
+            position: relative;
+            display: block;
+            margin-right: 310px;
+
+
+            .top{
+                position: absolute;
+                top: .1px;
+                font-family: sans-serif;
+                color: var(--text-color-1);
+                font-size: 40px;
+                font-weight: bold;
+                text-shadow: .5px .5px 4px black;
+            }
+
+            .bottom{
+                position: absolute;
+                top: 40px;
+                left: 60px;
+                transform: rotate(-10deg);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: var(--text-color-2);
+                font-size: 25px;
+                font-weight: bold;
+                text-shadow: .5px .5px 4px black;
+            }
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 650px;
+            width: 400px;
+            margin-top: 120px;
+            background-color: var(--background-color-1);
+            border-radius: 5px;
+            box-shadow: 6px 6px 5px var(--background-color-2), -6px -6px 5px var(--background-color-2);
+            font-family: Arial, Helvetica, sans-serif;
+
+            .padding{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 95%;
+                width: 95%;
+                background-color: var(--background-color-2);
+                border-radius: 5px;
+                box-shadow: 1px 1px 7px rgb(24, 23, 23), -1px -1px 7px rgb(24, 23, 23);
+
+                .top{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 20%;
+
+                    .display{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        width: 95%;
+                        height: 90%;
+                        background-color: var(--background-color-3);
+                        border-radius: 5px;
+                        box-shadow: inset 3px 4px 5px black, inset -3px -4px 5px black;
+                        overflow-x: hidden;
+
+                        p{
+                            font-weight: bold;
+                            font-size: 25px;
+                            overflow-x: auto;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .bottom{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    width: 95%;
+                    height: 75%;
+                    margin-top: 7px;
+                    row-gap: 7px;
+                    column-gap: 7px;
+                    border-radius: 5px;
+                    background-color: var(--background-color-3);
+
+                    button{
+                        box-shadow: 1px 1px 4px var(--background-color-1);
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .zero, .point{
+                        background-color: var(--button-color-3);
+                        font-weight: bold;
+                        font-size: 19px;
+                    }
+
+                    .Sin, .Cos, .Tan{
+                        background-color: var(--button-color-4);
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    .clean, .clear-screen{
+                        background-color: var(--button-color-1);
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    .divide, .add, .minus, .multiply, .exponent, .root, .percent, .equals{
+                        background-color: var(--button-color-2);
+                        font-weight: bold;
+                        font-size: 19px;
+                        svg{
+                            fill: black;
+                        }
+                    }
+                    .clean{
+                        font-weight: bold;
+                        font-size: 19px;
+                        svg{
+                            fill: black;
+                        }
+                    }
+
+                    .Sin, .Cos, .Tan,  .clean{
+                        margin-top: 3px;
+                    }
+
+                    .Sin, .one, .four, .seven, .zero, .root{
+                        margin-left: 5px;
+                    }
+
+                    .root, .exponent, .multiply, .equals{
+                        margin-bottom: 5px;
+                    }
+                    .clean, .clear-screen, .divide, .add, .minus, .equals{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .history{
+            font-family: Arial, Helvetica, sans-serif;
+
+            .title{
+                color: var(--text-color-2);
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .container{
+                visibility: hidden;
+                width: 300px;
+                max-height: 300px;
+                height: fit-content;
+                margin-top: 20px;
+                background-color: var(--button-color-3);
+                box-shadow: inset 1.5px 2.5px 5px black, inset -1.5px -2.5px 5px black;
+                border-radius: 10px;
+                overflow-y: auto;
+
+                .log{
+                    font-size: 20px;
+                    padding: 10px 10px;
+                }
+            }
+            .container-toggle{
+                visibility: visible;
+                animation: appear .4s ease-in-out
+            }
+
+            button{
+                color: var(--background-color-3);
+                padding: 10px 30px;
+                border-radius: 20px;
+                border: none;
+                background-color: var(--background-color-1);
+                box-shadow: 1px 1px 3px black;
+            }
+        }
+}
+
+
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media (max-width: 550px){
+    main{
+        section{
+            height: 550px;
+            width: 300px;
+        }
+    }
+}

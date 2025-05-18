@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONT FOR TOP(KELVIN)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--FONT FOR BOTTOM(CALCULATOR)-->
+
+</head>
+<body>
+    <main>
+        <div class="header">
+            <p class="top">KELVIN'S</p>
+            <p class="bottom">CALCULATOR</p>
+        </div>
+
+        <section>
+            <div class="padding">
+                <div class="top">
+                    <div class="display">
+                        <p class="display-screen"></p>
+                    </div>
+                </div>
+                <div class="bottom">
+                   <button class="Sin">Sin</button>
+                   <button class="Cos">Cos</button>
+                   <button class="Tan">Tan</button>
+                   <button class="clean"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/></svg></button>
+
+                   <button class="one" >1</button>
+                   <button class="two">2</button>
+                   <button class="three">3</button>
+                   <button class="clear-screen">AC</button>
+
+                   <button class="four">4</button>
+                   <button class="five">5</button>
+                   <button class="six">6</button>
+                   <button class="divide"><svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    width="13px" height="13px" viewBox="0 0 20.908 20.908"
+                    xml:space="preserve">
+               <g>
+                   <path d="M4.664,0.67l16.244,16.245l-3.629,3.629L1.034,4.3L4.664,0.67z M16.825,8.354c2.254,0,4.082-1.827,4.082-4.082
+                       c0-2.254-1.828-4.082-4.082-4.082c-2.255,0-4.082,1.828-4.082,4.082C12.743,6.527,14.57,8.354,16.825,8.354z M4.082,12.554
+                       C1.828,12.554,0,14.38,0,16.636c0,2.254,1.828,4.082,4.082,4.082s4.082-1.828,4.082-4.082C8.164,14.38,6.336,12.554,4.082,12.554z"
+                       />
+               </g>
+               </svg></button>
+
+                   <button class="seven">7</button>
+                   <button class="eight">8</button>
+                   <button class="nine">9</button>
+                   <button class="add"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></button>
+
+                   <button class="zero">0</button>
+                   <button class="point">.</button>
+                   <button class="percent"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M300-520q-58 0-99-41t-41-99q0-58 41-99t99-41q58 0 99 41t41 99q0 58-41 99t-99 41Zm0-80q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600Zm360 440q-58 0-99-41t-41-99q0-58 41-99t99-41q58 0 99 41t41 99q0 58-41 99t-99 41Zm0-80q25 0 42.5-17.5T720-300q0-25-17.5-42.5T660-360q-25 0-42.5 17.5T600-300q0 25 17.5 42.5T660-240Zm-444 80-56-56 584-584 56 56-584 584Z"/></svg></button>
+                   <button class="minus"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-440v-80h640v80H160Z"/></svg></button> 
+
+                   <button class="root"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 24 24" id="square-root" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><path id="primary" d="M3,12H4.31a1,1,0,0,1,.93.65L8,20,10.85,4.82a1,1,0,0,1,1-.82H21" style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></button>
+                   <button class="exponent"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M760-600v-80q0-17 11.5-28.5T800-720h80v-40H760v-40h120q17 0 28.5 11.5T920-760v40q0 17-11.5 28.5T880-680h-80v40h120v40H760ZM235-160l185-291-172-269h106l124 200h4l123-200h107L539-451l186 291H618L482-377h-4L342-160H235Z"/></svg></button>
+                   <button class="multiply"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+                   <button class="equals"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="M160-280v-120h640v120H160Zm0-280v-120h640v120H160Z"/></svg></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="history">
+            <p class="title">See Your History</p>
+            <button id="open-btn">History</button>
+            <div class="container">
+               <p class="log"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
